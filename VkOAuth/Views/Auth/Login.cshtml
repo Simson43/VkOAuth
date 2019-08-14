@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Authorization Page";
+}
+
+<div class="jumbotron">
+    <input id="auth" type="button" onclick="location.href='@ViewBag.RequestString'" value="Авторизоваться" />
+    <script>
+        var button = document.getElementById("auth");
+        button.addEventListener("click", () => button.disabled = true);//Для предотвращения повторного нажатия
+    </script>
+</div>

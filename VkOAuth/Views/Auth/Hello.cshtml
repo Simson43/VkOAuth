@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Authorization Page";
+}
+
+<div class="jumbotron">
+    <h1 align="center">Привет, @ViewBag.Name!</h1>
+    <h2 align="center">5 рандомных друзей:</h2>
+    <style>
+        h1 { margin-bottom: 5% }
+        h2 { margin-bottom: 3% }
+    </style>
+    @foreach (var friend in ViewBag.friends)
+    {
+        <p align="center">@friend</p>
+    }
+</div>
